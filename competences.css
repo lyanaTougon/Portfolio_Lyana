@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #7209b7, #4a0072, #1a0033, #000000);
+    color: #ffffff;
+}
+.formation-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background: #c0a1c879;
+  padding: 20px 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.formation-content h2 {
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: rgb(255, 214, 255);
+}
+
+.formation-content p {
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .formation-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .formation-img img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
+.lang-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.lang-icons img {
+  width: 50px;       /* taille des icônes */
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #2a0045; /* petite couleur de fond pour contraste */
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.lang-icons img:hover {
+  transform: scale(1.2);
+}
+
+.formation h1 {
+    text-align: left;             /* aligne à gauche */
+    font-size: 3rem;              /* plus grand */
+    font-weight: 700;             /* plus gras */
+    color: #e0b3ff;               /* violet clair */
+    text-transform: uppercase;    /* majuscules */
+    letter-spacing: 2px;          /* espacement entre les lettres */
+    position: relative;           /* pour l’effet ligne décorative */
+    margin-bottom: 30px;          /* espace sous le titre */
+    margin-top: 60px;
+
+}
+
+/* ligne décorative sous le titre */
+.formation h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;               /* juste en dessous du texte */
+    width: 60px;                 /* longueur de la ligne */
+    height: 4px;                 /* épaisseur de la ligne */
+    background: linear-gradient(90deg, #9b00ff, #e0b3ff); /* dégradé violet */
+    border-radius: 2px;
+}

@@ -1,14 +1,27 @@
-.experiences {
-  padding: 100px 50px 50px 50px;
-  max-width: 900px;
-  margin: auto;
+.experiences h1 {
+    text-align: left;             /* aligné à gauche */
+    font-size: 3rem;              /* taille importante */
+    font-weight: 700;             /* gras */
+    color: #e0b3ff;               /* violet clair */
+    text-transform: uppercase;    /* majuscules */
+    letter-spacing: 2px;          /* espacement lettres */
+    position: relative;           /* pour ligne décorative */
+    margin-bottom: 30px;          /* espace sous le titre */
+    margin-top: 60px;
 }
 
-.experiences h1 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 20px;
+/* ligne décorative sous le titre */
+.experiences h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;               /* juste sous le texte */
+    width: 60px;                 /* longueur de la ligne */
+    height: 4px;                 /* épaisseur */
+    background: linear-gradient(90deg, #9b00ff, #e0b3ff); /* dégradé violet */
+    border-radius: 2px;
 }
+
 
 .experience-card {
   background: #c0a1c879;
@@ -68,6 +81,12 @@
 }
 
 body {
-  background-color: #161616; /* violet très clair par exemple */
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #1c002b, #2e0045, #45006a, #1a001f);
+    color: #ffffff;
 }
+
+
 
