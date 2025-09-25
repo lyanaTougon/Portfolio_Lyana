@@ -17,7 +17,7 @@
     left: 0;
     bottom: -10px;               /* juste sous le texte */
     width: 60px;                 /* longueur de la ligne */
-    height: 4px;                 /* épaisseur */
+    height: 9px;                 /* épaisseur */
     background: linear-gradient(90deg, #9b00ff, #e0b3ff); /* dégradé violet */
     border-radius: 2px;
 }
@@ -86,6 +86,11 @@ body {
     overflow-x: hidden;
     background: linear-gradient(135deg, #1c002b, #2e0045, #45006a, #1a001f);
     color: #ffffff;
+}
+.experience-card p {
+    font-size: 13px; /* texte plus grand */
+    margin: 2px 0; /* espace entre les lignes */
+    line-height: 1.8; /* interligne plus large */
 }
 
 
